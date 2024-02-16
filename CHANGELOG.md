@@ -3,6 +3,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [5.0.1] - 2024.02.16
+
+### Fixed
+- fix for CoreSettingsLoader error during build process in batch mode
+
 ## [5.0.0] - 2024.01.12
 
 ### Updated

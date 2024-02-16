@@ -17,6 +17,12 @@ namespace ReadyPlayerMe.Core.Editor
         
         public static void EnsureSettingsExist()
         {
+            if (Application.isBatchMode)
+            {
+                // Possible error while running the build process via CI pipeline
+                return;
+            }
+            
             if (CoreSettingsHandler.CoreSettings == null)
             {
                 CreateSettings();
